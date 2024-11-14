@@ -1,0 +1,11 @@
+{% extends 'base.html' %}{% load static %}
+
+{% block content %}
+<h2>XYZ There</h2>
+<p>Enter a string to check if "xyz" appears without a preceding period (e.g., ".xyz" is ignored).</p>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

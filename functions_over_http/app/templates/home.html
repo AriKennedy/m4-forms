@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron-text-center">
+    <h1>Welcome to Random Functions!</h1>
+    <p>This site provides various functionalities:</p>
+    <ul class="homepage-links">
+        <li><a href="{% url 'hey_you' %}">Hey You</a>: Enter your name to get a personalized greeting.</li>
+        <li><a href="{% url 'age_in' %}">How Old?</a>: Calculate your age in a specific future year.</li>
+        <li><a href="{% url 'order_total' %}">Can I Take Your Order?</a>: Get the total price for an order of burgers, fries, and drinks.</li>
+    </ul>
+</div>
+{% endblock %}

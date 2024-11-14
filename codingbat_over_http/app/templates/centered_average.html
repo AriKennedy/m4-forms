@@ -1,0 +1,11 @@
+{% extends 'base.html' %}{% load static %}
+
+{% block content %}
+<h2>Centered Average</h2>
+<p>Enter a comma-separated list of integers to calculate the centered average (ignoring the largest and smallest values).</p>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

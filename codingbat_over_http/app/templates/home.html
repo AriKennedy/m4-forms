@@ -1,0 +1,24 @@
+{% extends 'base.html' %}{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1>Welcome to the Warmup Exercises!</h1>
+    <p>Select an exercise below to try out its functionality:</p>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="{% url 'front_times' %}">Front Times</a> - Repeat the first 3 characters of a string.
+        </li>
+        <li class="list-group-item">
+            <a href="{% url 'no_teen_sums' %}">No Teen Sums</a> - Sum of 3 numbers, ignoring most teens.
+        </li>
+        <li class="list-group-item">
+            <a href="{% url 'xyz_there' %}">XYZ There</a> - Check if "xyz" appears without a preceding period.
+        </li>
+        <li class="list-group-item">
+            <a href="{% url 'centered_average' %}">Centered Average</a> - Calculate the average, ignoring the extremes.
+        </li>
+    </ul>
+</div>
+{% endblock %}

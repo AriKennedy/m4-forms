@@ -3,7 +3,7 @@
 {% block content %}
 <h2>XYZ There</h2>
 <p>Enter a string to check if "xyz" appears without a preceding period (e.g., ".xyz" is ignored).</p>
-<form method="post">
+<form method="get">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit" class="btn btn-primary">Submit</button>

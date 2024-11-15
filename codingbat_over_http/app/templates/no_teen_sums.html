@@ -3,7 +3,7 @@
 {% block content %}
 <h2>No Teen Sums</h2>
 <p>Enter three integers. Teens (13-19, except 15 and 16) will count as 0 in the sum.</p>
-<form method="post">
+<form method="get">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit" class="btn btn-primary">Submit</button>

@@ -3,7 +3,7 @@
 {% block content %}
 <h2>Front Times</h2>
 <p>Enter a string and a number to get the first 3 characters repeated that many times.</p>
-<form method="post">
+<form method="get">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit" class="btn btn-primary">Submit</button>
